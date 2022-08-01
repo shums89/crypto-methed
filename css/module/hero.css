@@ -1,0 +1,42 @@
+.hero {
+  background-color: #000;
+  background-image: url('../../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__container {
+  padding-top: 127px;
+  padding-bottom: 127px;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 121px;
+  color: #55C2FF;
+  margin-bottom: 18px;
+}
+
+.hero__subtitle {
+  max-width: 480px;
+  font-family: 'IBM Plex Sans';
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+  border: none;
+}
+
+.hero__btn {
+  background: #55C2FF;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding: 11px 11px;
+  max-width: 232px;
+  width: 100%;
+}
