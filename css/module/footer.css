@@ -1,0 +1,31 @@
+.footer {
+  background-color: #08475E;
+  padding-top: 40px;
+  padding-bottom: 42px;
+  color: #fff;
+}
+
+.footer__container {
+  display: grid;
+  gap: 34px 10px;
+  grid-template-areas: 
+  "logo navigation navigation"
+  "copyright . design";
+}
+
+.footer__logo {
+  grid-area: logo;
+}
+
+.footer__navigation {
+  grid-area: navigation;
+}
+
+.footer__copyright {
+  grid-area: copyright;
+}
+
+.footer__design {
+  grid-area: design;
+  justify-self: end;
+}
