@@ -61,7 +61,7 @@
 }
 
 .advantage__item-content_speed::before {
-background-image: url('../../img/speed.svg.svg');
+background-image: url('../../img/speed.svg');
 }
 
 .advantage__item-content_quality::before {
@@ -69,5 +69,5 @@ background-image: url('../../img/quality.svg');
 }
 
 .advantage__item-content_security::before {
-background-image: url('../../img/security.svg.svg');
+background-image: url('../../img/security.svg');
 }
