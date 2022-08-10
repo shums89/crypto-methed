@@ -1,5 +1,5 @@
 const hide = (elem, answer) => {
-  if (!elem.classList.contains('faq__item_show')) return;
+  if (!elem.classList.contains('faq__item_show') || elem.classList.contains('collapsing')) return;
 
   answer.style.height = `${answer.offsetHeight}px`;
   answer.offsetHeight;
@@ -8,17 +8,19 @@ const hide = (elem, answer) => {
   answer.style.overflow = 'hidden';
   answer.style.transition = 'height 360ms ease-in-out';
   elem.classList.remove('faq__item_show');
+  elem.classList.add('collapsing');
 
   setTimeout(() => {
     answer.style.display = '';
     answer.style.height = '';
     answer.style.overflow = '';
     answer.style.transition = '';
+    elem.classList.remove('collapsing');
   }, 360);
 };
 
 const show = (elem, answer) => {
-  if (elem.classList.contains('faq__item_show')) return;
+  if (elem.classList.contains('faq__item_show') || elem.classList.contains('collapsing')) return;
 
   answer.style.display = 'block';
   const height = answer.offsetHeight;
@@ -27,6 +29,7 @@ const show = (elem, answer) => {
   answer.style.transition = 'height 360ms ease-in-out';
   answer.offsetHeight;
   answer.style.height = `${height}px`;
+  elem.classList.add('collapsing');
 
   setTimeout(() => {
     elem.classList.add('faq__item_show');
@@ -34,6 +37,7 @@ const show = (elem, answer) => {
     answer.style.height = '';
     answer.style.overflow = '';
     answer.style.transition = '';
+    elem.classList.remove('collapsing');
   }, 360);
 };
 

@@ -3,9 +3,13 @@
   align-items: center;
 }
 
-.navigation__item:not(:last-child) {
+.navigation__item {
   margin-right: 43px;
 } 
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
 
 @media (max-width: 768px) {
   .navigation__list {

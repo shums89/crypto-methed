@@ -57,6 +57,10 @@
   background-image: url("data:image/svg+xml,%3Csvg width='23' height='14' viewBox='0 0 23 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.5 14L22.3253 0.5H0.674683L11.5 14Z' fill='%2355C2FF'/%3E%3C/svg%3E%0A");
 }
 
+.faq__item:not(.faq__item_show) .faq__answer {
+  display: none;
+}
+
 .faq__dropdown {
   font-family: 'IBM Plex Sans';
   font-weight: 300;
@@ -65,11 +69,21 @@
   padding: 0 100px 18px 33px;
 }
 
-.faq__item:not(.faq__item_show) .faq__answer {
-  display: none;
+.faq__link {
+  color: #55C2FF;
 }
 
 @media (max-width: 768px) { 
+  .faq {
+    padding: 30px 0;
+  }
+
+  .faq__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
   .faq__question {
     font-size: 18px;
     line-height: 22px;
